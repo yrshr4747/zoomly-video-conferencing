@@ -78,7 +78,7 @@ Use two separate browser profiles or devices. This prevents one computer camera 
 
 ## Deployment
 
-Deploy the FastAPI backend from `render.yaml` as a Render Blueprint. Set `FRONTEND_ORIGIN_REGEX` to the exact deployed frontend origin, for example `^https://zoomly-web.vercel.app$`. The configuration uses a persistent disk for SQLite, so meeting and chat records survive backend restarts.
+Deploy the FastAPI backend from `render.yaml` as a Render Blueprint. Set `FRONTEND_ORIGIN_REGEX` to the exact deployed frontend origin, for example `^https://zoomly-web.vercel.app$`. The free deployment uses an ephemeral SQLite file, so the seeded dashboard returns after backend restarts. Attach a persistent disk or move to PostgreSQL when durable production data is required.
 
 Deploy the `frontend` directory as a Next.js project on Vercel. Set `NEXT_PUBLIC_API_URL` to the HTTPS Render API URL, then redeploy the frontend. HTTPS is required for phone camera and microphone permissions.
 
