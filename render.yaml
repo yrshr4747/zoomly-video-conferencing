@@ -11,4 +11,4 @@ services:
       - key: PYTHON_VERSION
         value: 3.12.11
       - key: FRONTEND_ORIGIN
-        value: https://zoomly-meetings-of47f1hrd-yashrajsingh4747-2638s-projects.vercel.app
+        value: https://zoomly-meetings.vercel.app
