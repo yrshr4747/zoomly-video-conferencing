@@ -10,5 +10,5 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.12.11
-      - key: FRONTEND_ORIGIN_REGEX
-        sync: false
+      - key: FRONTEND_ORIGIN
+        value: https://zoomly-meetings-of47f1hrd-yashrajsingh4747-2638s-projects.vercel.app
